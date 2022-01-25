@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tiles</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/tiles.css">
+    
+    <!-- jQuery library -->
+    <script src="assets/js/jquery.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery-ui.min.js"></script>
+
+   
+    <script src="assets/js/tiles.js"></script>
+
+</head>
+
+<body>
+
+
+    <form name="myform" id="myform">
+
+
+        <table class="form-table">
+            <tr>
+                <td>
+                    <label for="selectTile">Select Tile</label>
+                </td>
+                <td>
+                    <input type="file" id="selectTile" name="selectTile" class="dim-input">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="wWidth">Wall Width:</label>
+                </td>
+                <td>
+                    <input type="number" id="wWidth" name="wWidth" class="dim-input">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="wHeight">Wall Height:</label>
+                </td>
+                <td>
+                    <input type="number" id="wHeight" name="wHeight" class="dim-input">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tWidth">Tile Width:</label>
+                </td>
+                <td>
+                    <input type="number" id="tWidth" name="tWidth" class="dim-input">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tHeight">Tile Height:</label>
+                </td>
+                <td>
+                    <input type="number" id="tHeight" name="tHeight" class="dim-input">
+
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Submit" id="getDimmensions"></td>
+            </tr>
+
+        </table>
+        <table class="result-table">
+            <tr>
+                <td>
+                    <span>No. of Tile in a row --></span>
+                </td>
+                <td>
+                    <span id="rowTiles"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>No. of Tile in a Column --></span>
+                </td>
+                <td>
+                    <span id="columnTiles"></span>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--div class="add-row-col"> 
+        <button type="button" class="add-button" id="btnAdd">Add Rows!</button>
+        <button type="button" class="add-button" id="btnAddCol">Add column</button></div-->
+
+        <!--a class="btn btn-primary btn-large" data-toggle="modal" data-target=".modal">Launch demo modal</a-->
+        <div id="blacklistgrid" class="wall-dim">
+            <div id="row" class="tile-row">
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+    <!--div class="tiles-modal">
+        <div class="modal fade">
+            <div class="modal-dialog tiles-modal-dialog">
+                <div class="modal-content">
+                    <span class="image-wrapper"><img src="assets/images/15.jpg" alt="1" width="100" height="100"></span>
+                    <span class="image-wrapper"><img src="assets/images/14.jpg" alt="1" width="100" height="100"></span>
+                    <span class="image-wrapper"><img src="assets/images/12.jpg" alt="1" width="100" height="100"></span>
+                    <span class="image-wrapper"><img src="assets/images/11.jpg" alt="1" width="100" height="100"></span>
+                    <span class="image-wrapper"><img src="assets/images/1.jpg" alt="1" width="100" height="100"></span>
+                     <div class="modal-footer">
+                         <a href="#" class="btn" data-dismiss="modal">Close</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+        </div-->
+</body>
+
+</html>
